@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="quizL.js" defer></script>
+    <title>LightSaber Quiz</title>
+    <link rel="stylesheet" href="styleL.css" />
+  </head>
+  <body>
+    <section
+      class="quiz-section quiz-fullscreen section section-dark"
+      id="quiz"
+    >
+      <div class="section-background-image"></div>
+
+      <div class="container">
+        <div id="introbox1" class="quizintrobox">
+          <p>
+            <b>Welcome young padwan, It is time to build your lightsaber</b>
+            This test will put you through a series of situations and use your
+            responses to determine what color of your lightsaber suits you.
+            Scroll down to take the test!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <form class="questions">
+      <div class="question">
+        <p>
+          What do you use to turn the tables in a battle when hope is little?
+        </p>
+        <label> <input name="question1" type="radio" value="-2" />Anger</label>
+        <label>
+          <input name="question1" type="radio" value="2" />The Force</label
+        >
+        <label>
+          <input name="question1" type="radio" value="1" />Your
+          lightsaber</label
+        >
+      </div>
+
+      <div class="question">
+        <p>
+          You need information from a person that refuse to talk. How do you get
+          the information?
+        </p>
+        <label>
+          <input name="question2" type="radio" value="1" /> Reasoning and logic
+          arguments
+        </label>
+        <label>
+          <input name="question2" type="radio" value="-2" />threatening the
+          person
+        </label>
+        <label>
+          <input name="question2" type="radio" value="2" /> Jedi mind trick
+        </label>
+      </div>
+
+      <div class="question">
+        <p>What Force power do you wish to achive in your training?</p>
+        <label>
+          <input name="question3" type="radio" value="2" /> Force healing
+        </label>
+        <label>
+          <input name="question3" type="radio" value="-2" /> Force choke
+        </label>
+        <label>
+          <input name="question3" type="radio" value="1" /> Jedi mind trick
+        </label>
+      </div>
+      <div class="question">
+        <p>
+          With a lightsaber comes a big responsibility, with that why do you
+          want a lightsaber?
+        </p>
+        <label>
+          <input name="question4" type="radio" value="1" />For defencing
+          myself</label
+        >
+        <label>
+          <input name="question4" type="radio" value="-2" />To become powerful
+          and use it for fights</label
+        >
+        <label>
+          <input name="question4" type="radio" value="2" />To help other and
+          keep the peace</label
+        >
+      </div>
+
+      <div class="question">
+        <p>
+          There have been times where you feel weak, undescription of pain and
+          you have heard the dark side calling you. Have do you respond to this
+          call?
+        </p>
+        <label>
+          <input name="question5" type="radio" value="-2" /> Give in to the dark
+          side
+        </label>
+        <label>
+          <input name="question5" type="radio" value="2" /> Understand the dark
+          side but never give in to it
+        </label>
+        <label>
+          <input name="question5" type="radio" value="1" /> Leave the jedi and
+          find your own path
+        </label>
+      </div>
+
+      <button type="button" onclick="submitQuiz()">
+        Wanna see the what color your lightsaber is?
+      </button>
+    </form>
+    <div class="result invisible">
+      <h1>You got <span class="correct-answers">0</span></h1>
+      <p>
+        If you got -10 to -5: Red. Unlike the Jedi, who wielded various colored
+        lightsabers, the Sith all carried red lightsabers. It was a symbol of
+        their unity and unwavering dedication to the Dark side of the Force.
+        Lightsaber color shares a strong affinity with the identity of the user.
+      </p>
+      <p>
+        If you got -4 to 1: Purple. Purple lightsabers are among the most
+        mysterious color lightsabers known in Star Wars. ... The shading purple
+        speaks to moral uncertainty, reconstruction, and recovery. Therefore,
+        the individuals that used a purple lightsaber generally shared an
+        affinity with both the Light and Dark sides of the Force.
+      </p>
+      <p>
+        If you got 2 - 4: Yellow. Yellow indicated a Jedi Sentinel, a Jedi who
+        honed his or her skills in a balance of combat and scholarly pursuits.
+      </p>
+      <p>
+        If you got 5 to 8: Blue. Blue indicated a Jedi Guardian, a Jedi who used
+        the Force on a more physical level.
+      </p>
+      <p>
+        If you got 9 to 10: Green. Green indicated a Jedi Consular, a Jedi who
+        preferred to reflect on the mysteries of the Force and fight the dark
+        side at its heart.
+      </p>
+      <p>If you want to take the lightsaber quiz agin click on the button</p>
+      <button type="button" onclick="resetQuiz()">Want to try again?</button>
+      <p>
+        If you want to take the jedi backstory quiz again, click on the this
+        button
+      </p>
+      <button><a href="index.html">jedi backstory quiz</a></button>
+    </div>
+  </body>
+</html>
